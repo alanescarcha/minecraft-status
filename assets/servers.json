@@ -1,0 +1,44 @@
+{
+    "servers": [
+        {
+            "name": "minecraft.net",
+            "heartbeat": 24,
+            "uptime": "24_24"
+        },
+        {
+            "name": "session.minecraft.net",
+            "heartbeat": 25,
+            "uptime": "25_24"
+        },
+        {
+            "name": "account.mojang.com",
+            "heartbeat": 26,
+            "uptime": "26_24"
+        },
+        {
+            "name": "authserver.mojang.com",
+            "heartbeat": 27,
+            "uptime": "27_24"
+        },
+        {
+            "name": "sessionserver.mojang.com",
+            "heartbeat": 28,
+            "uptime": "28_24"
+        },
+        {
+            "name": "api.mojang.com",
+            "heartbeat": 29,
+            "uptime": "29_24"
+        },
+        {
+            "name": "textures.minecraft.net",
+            "heartbeat": 30,
+            "uptime": "30_24"
+        },
+        {
+            "name": "mojang.com",
+            "heartbeat": 31,
+            "uptime": "31_24"
+        }
+    ]
+}

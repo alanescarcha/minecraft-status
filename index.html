@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alan Escarcha, VexyHost">
+    <meta name="keywords"
+        content="minecraft status server, minecraft status uptime, uptime, craftbukkit, bukkit, paper, paperspigot, spigot, bungeecord, flamecord, minecarft spigot, status, minecraft uptime, vexyhost">
+    <meta name="theme-color" content="#0d6efd">
+    <title>Minecraft Status Uptime | Server Status</title>
+    <meta name="description"
+        content="Minecraft Status Uptime has been developed to see in real time the status of minecraft servers coming from Mojang. Can't login to Minecraft? Check if it's not a server downtime here.">
+    <link rel="icon" type="image/png" href="./assets/img/logo.png">
+    <meta property="og:title" content="Minecraft Server Jars | Versions Download List" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://minecraft-status.com/" />
+    <meta property="og:description"
+        content="Minecraft Status Uptime has been developed to see in real time the status of minecraft servers coming from Mojang. Can't login to Minecraft? Check if it's not a server downtime here." />
+    <meta property="og:image" content="./assets/img/logo.png" />
+    <meta name="google-site-verification" content="6cLF3Av-kGTuES5k7UMTz5YPK2cwfOznraP_SwdwT1k" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+
+<body data-theme="dark">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <img src="./assets/img/logo.png" alt="Minecraft Server Jars" width="64"
+                    class="d-inline-block align-middle me-3">
+                <a class="navbar-brand" href="https://minecraft-status.com">Minecraft Status Uptime</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item d-grid">
+                            <a class="btn btn-outline-primary btn1" href="https://discord.vexyhost.com">Discord
+                                Hosting</a>
+                        </li>
+                        <li class="nav-item d-grid">
+                            <a class="btn btn-primary" href="https://vexyhost.com/">Minecraft Hosting</a>
+                        </li>
+                    </ul>
+                    <div class="form-check form-switch mx-2 btn2">
+                        <input type="checkbox" class="form-check-input" id="darkSwitch" />
+                        <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="py-5 text-center container-xl">
+            <div class="row py-xl-5">
+                <div id="title" class="col-home mx-auto">
+                    <h1 class="typewriter-home">Minecraft <span style="color: var(--primary);">Status Uptime</span></h1>
+                </div>
+                <p class="lead text-muted">Minecraft Status Uptime has been developed to see in real time the status of
+                    minecraft servers coming from Mojang. Can't login to Minecraft? Check if it's not a server downtime
+                    here. 🧑‍💻</p>
+            </div>
+        </section>
+        <div class="container">
+            <div class="resume mb-4 container-status p-4">
+                <div class="status">
+                    Loading...
+                </div>
+            </div>
+            <div class="servers container-servers p-4">
+                <h3>Minecraft Server Status</h3>
+                <div id="monitors"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer mt-5 py-3 bg-light">
+        <center>
+            <figure class="figure mb-3">
+                <a href="https://vexyhost.com/"><img
+                        src="https://media.discordapp.net/attachments/865377256725545000/889647197598126121/banner.gif"
+                        class="figure-img img-fluid rounded" alt="..."></a>
+                <figcaption class="figure-caption text-end">Server Hosting</figcaption>
+            </figure>
+        </center>
+        <div class="container text-center">
+            <span>Made with <i class="bi bi-heart-fill text-danger"></i> by <a style="text-decoration: none;"
+                    href="https://vexyhost.com/">VexyHost®</a><br><a style="text-decoration: none;"
+                    href="https://mctools.pro/">Try Minecraft Server Tools</a> | <a style="text-decoration: none;"
+                    href="https://jars.vexyhost.com/">Try Minecraft Server Jars</a>
+            </span>
+        </div>
+    </footer>
+    <div style="position: fixed;top: 0;bottom: 0;left: 0;right: 0;width: 100%;height: 100vh;pointer-events: none;z-index: -1;"
+        id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/main.js"></script>
+    <script src="./assets/uptime.js"></script>
+    <script src="./assets/theme-toggle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+        integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
+        crossorigin="anonymous" type="text/javascript"></script>
+    <script>
+        particlesJS.load('particles-js', './assets/raise_up.json');
+        window.addEventListener('load', () => {
+            setTimeout(function () {
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
