@@ -8,12 +8,12 @@ const deviceType = () => {
     }
     return "desktop";
 };
-if(deviceType() == "desktop"){
+if (deviceType() == "desktop") {
     if (localStorage.getItem("darkSwitch") == "dark") {
         document.getElementById('title').classList.add('typewriterDark');
     } else if (localStorage.getItem("darkSwitch") == "light") {
         document.getElementById('title').classList.add('typewriter');
-    }else{
+    } else {
         document.getElementById('title').classList.add('typewriterDark');
     }
 }

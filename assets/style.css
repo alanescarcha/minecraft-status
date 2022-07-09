@@ -85,7 +85,9 @@ h1 {
 }
 
 @keyframes blinkdark {
-    from, to {
+
+    from,
+    to {
         border-color: transparent
     }
 
@@ -96,7 +98,9 @@ h1 {
 
 
 @keyframes blink {
-    from, to {
+
+    from,
+    to {
         border-color: transparent
     }
 
@@ -172,6 +176,7 @@ li.nav-item {
     font-size: 1.2rem;
     font-weight: 400;
 }
+
 .container-servers {
     background-color: #0000003b;
     border-radius: 10px;
