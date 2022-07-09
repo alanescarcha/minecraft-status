@@ -62,7 +62,7 @@ fetch("./assets/servers.json")
                             <span class="badge rounded-pill ${getStatus(serverStatus[49]).bgColor} align-middle">${getPorcentage(status.uptimeList[server.uptime])}%</span> ${server.name}
                         </div>
                     </div>
-                    <div class="col-3 col-md-4">
+                    <div class="col-3 col-md-4 col-responsive">
                         <div class="hp-bar">
                             ${getStatus(serverStatus[37]).tag}
                             ${getStatus(serverStatus[38]).tag}

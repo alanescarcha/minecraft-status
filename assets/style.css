@@ -181,3 +181,9 @@ li.nav-item {
     background-color: #0000003b;
     border-radius: 10px;
 }
+
+@media (min-width: 575) {
+    .col-responsive{
+        display: none;
+    }
+}
