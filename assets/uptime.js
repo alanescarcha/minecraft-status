@@ -9,7 +9,7 @@ fetch("./assets/servers.json")
             for (let i = 0; i < Object.keys(data).length; i++) {
                 var length = data[Object.keys(data)[i]].length;
                 console.log(data[Object.keys(data)[i]])
-                total += data[Object.keys(data)[i]][length].status;
+                total += data[Object.keys(data)[i]][length - 1].status;
             }
             switch (total) {
                 case Object.keys(data).length:
