@@ -7,9 +7,9 @@ fetch("./assets/servers.json")
         function getTotalSys(data) {
             let total = 0;
             for (let i = 0; i < Object.keys(data).length; i++) {
-                console.log(data[Object.keys(data)[i]].length)
+                var length = data[Object.keys(data)[i]].length;
                 console.log(data[Object.keys(data)[i]])
-                total += data[Object.keys(data)[i]][49].status;
+                total += data[Object.keys(data)[i]][length].status;
             }
             switch (total) {
                 case Object.keys(data).length:
