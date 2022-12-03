@@ -8,7 +8,6 @@ fetch("./assets/servers.json")
             let total = 0;
             for (let i = 0; i < Object.keys(data).length; i++) {
                 var length = data[Object.keys(data)[i]].length;
-                console.log(data[Object.keys(data)[i]])
                 total += data[Object.keys(data)[i]][length - 1].status;
             }
             switch (total) {
@@ -66,7 +65,6 @@ fetch("./assets/servers.json")
                     </div>
                     <div class="col-3 col-md-4 col-responsive">
                         <div class="hp-bar">
-                            ${getStatus(serverStatus[37]).tag}
                             ${getStatus(serverStatus[38]).tag}
                             ${getStatus(serverStatus[39]).tag}
                             ${getStatus(serverStatus[40]).tag}
@@ -79,6 +77,7 @@ fetch("./assets/servers.json")
                             ${getStatus(serverStatus[47]).tag}
                             ${getStatus(serverStatus[48]).tag}
                             ${getStatus(serverStatus[49]).tag}
+                            ${getStatus(serverStatus[50]).tag}
                         </div>
                     </div>
                 </div>
